@@ -1,0 +1,30 @@
+.header {
+  
+  background: rgb(11,11,11);
+background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(51,53,53,1) 100%);
+  color: white;
+  padding: 1px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav .button {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  background: rgb(62, 66, 66);
+  
+  border-radius: 4px;
+}
+
+.nav .button:hover {
+  background: #0056b3;
+}
