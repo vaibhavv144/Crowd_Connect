@@ -7,7 +7,9 @@ import StartCampaign from './pages/StartCampaign';
 import HowItWorks from './pages/HowItWorks';
 import ConnectWallet from './pages/ConnectWallet';
 import LandingPage from './pages/LandingPage';
+import CardDetails from './components/CardDetails';
 import './App.css';
+
 
 const App = () => (
   <Router>
@@ -17,8 +19,8 @@ const App = () => (
          <Route path="/" element={<LandingPage />} />
 
         <Route path="/home" element={<Home />} />
-        
         <Route path="/start-campaign" element={<StartCampaign />} />
+        <Route path="/card/:id" element={<CardDetails />} />
         <Route path="/how-it-works" element={<HowItWorks />} />
         <Route path="/connect-wallet" element={<ConnectWallet />} />
       </Routes>

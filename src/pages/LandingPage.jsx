@@ -1,38 +1,40 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./LandingPage.css";
 
 const LandingPage = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleRedirect = () => {
-    navigate("/home"); // Adjust the route as per your app structure
+    navigate("/Home"); // Redirect to the home page (adjust route if needed)
   };
 
   return (
-    <div className="landing-page-container">
-      {/* Logo */}
-      <header className="landing-logo">
-        <h1 >For the Mankind</h1>
-      </header>
+    <div className="landing-container">
+      {/* Left Section */}
+      <div className="left-section">
+        <img
+          src="/logo.png"
+          alt="Website Logo"
+          className="website-logo"
+        />
+      </div>
 
-      {/* Main Content */}
-      <main className="landing-content">
-        <h2>Hiii rndom textt</h2>
-        <p>More than 100 users active every day.</p>
-        <button className="cta-button" onClick={handleRedirect}>
+      {/* Right Section */}
+      <div className="right-section">
+        <h1>Welcome to CrowdConnect</h1>
+        <p>
+          CrowdConnect empowers people to collaborate on projects, fund ideas,
+          and bring innovative concepts to life. Join our community and be a
+          part of the change you want to see in the world!
+        </p>
+        <button className="connect-button" onClick={handleRedirect}>
           Connect with Crowd
         </button>
-      </main>
-
-      {/* Floating Elements */}
-      <div className="floating-elements">
-      <div className="circle"></div>
-        <div className="cube"></div>
-        {/* <div className="ring"></div> */}
       </div>
     </div>
   );
 };
 
 export default LandingPage;
+

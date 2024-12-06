@@ -21,10 +21,33 @@ background: linear-gradient(90deg, rgba(11,11,11,1) 0%, rgba(51,53,53,1) 100%);
   color: white;
   text-decoration: none;
   background: rgb(62, 66, 66);
-  
+  font-weight: bold;
   border-radius: 4px;
 }
 
 .nav .button:hover {
   background: #0056b3;
+}
+
+ .button_cnct{
+  border-radius: 1rem ;
+  margin: 0 0.5rem;
+  padding: .7rem 1rem;
+  color: white;
+  text-decoration: none;
+  background: rgb(62, 66, 66);
+  font-weight: bold;
+  border-radius: 4px;
+}
+.nav .button_cnct:hover {
+  background: #fff;
+  border: none;
+  margin: 0 0.5rem;
+  padding: .7rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  background: orangered;
 }
